@@ -26,4 +26,23 @@
         Decision
     }
 
+    public enum ActionRejectReason
+    {
+        None,
+        NotInDecision,
+        AlreadySelected,
+        InvalidSkill,
+        SpiritNotEnough,
+        DodgeNotEnough
+    }
+
+    public enum RoundPhase
+    {
+        None,
+        Beat,
+        Decision,
+        Result,
+        LoopDelay
+    }
+
 }

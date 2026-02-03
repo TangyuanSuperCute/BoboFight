@@ -1,21 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace BattleScene
 {
     [Serializable]
     public class BattleInfoModel
     {
+        public string name;
+        public Sprite avatar;
+
         public int hpMax;
         public int hpMin;
         public int hp;
-        
+
+        public int spiritMax;
         public int spiritCount;
+        
+        public int dodgeMax;
         public int dodgeCount;
 
-        public List<SkillModel> skills;
-        
-        public List<BuffModel> buffs;
+        public List<SkillModel> skills = new();
+        public List<BuffModel> buffs = new();
     }
 
     [Serializable]
